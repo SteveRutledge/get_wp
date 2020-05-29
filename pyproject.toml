@@ -11,9 +11,14 @@ authors = ["Steve <44811980+SteveRutledge@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+get_wp= "get_wp.console:main"
+
