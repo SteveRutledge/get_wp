@@ -1,7 +1,9 @@
 # src/get_wp/console.py
 
 import textwrap
+
 import click
+
 from . import __version__, wikipedia
 
 

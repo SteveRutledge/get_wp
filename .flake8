@@ -1,0 +1,15 @@
+# .flake8
+[flake8]
+# disable bandit complaints about assertions in tests
+per-file-ignores = tests/*:S101
+
+# inform the plugin about package names that are considered local
+application-import-names = get_wp, tests
+
+# adopt google style guide
+import-order-style = google
+
+select = B,B9,BLK,C,E,F,I,S,W
+ignore = E203,E501,W503
+max-line-length = 80
+max-complexity = 10
