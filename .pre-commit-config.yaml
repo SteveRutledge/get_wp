@@ -7,5 +7,5 @@ repos:
     -   id: trailing-whitespace
 -   repo: https://github.com/psf/black
     rev: 19.3b0
-    hooks: 
+    hooks:
     -   id: black
