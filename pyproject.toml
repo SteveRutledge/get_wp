@@ -13,6 +13,8 @@ authors = ["Steve <44811980+SteveRutledge@users.noreply.github.com>"]
 python = "^3.7"
 click = "^7.1.2"
 requests = "^2.23.0"
+desert = "^2020.1.6"
+marshmallow = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.3"

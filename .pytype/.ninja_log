@@ -13,3 +13,7 @@
 3297	5122	1592593271190512107	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
 0	965	1592593361815452344	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
 965	2768	1592593363610769416	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
+0	1813	1592594253170184218	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi	682f2345362ea4a8
+1813	2335	1592594253716084474	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi	cd7c311b500fa85c
+1	971	1592594283805720271	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
+971	2786	1592594285615226213	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
