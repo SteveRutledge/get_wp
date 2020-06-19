@@ -15,15 +15,18 @@ more focused on framework/ecosystem right now rather than content:
 [flake8-import-order](https://pypi.org/project/flake8-import-order/): flake8 plugin that checks import ordering<br/>
 [safety](https://github.com/pyupio/safety): check installed dependencies for know security vulnerabilities<br/>
 [pre-commit](https://pre-commit.com/): python framework for git pre-commit hooks<br/>
+[mypy](http://mypy-lang.org/): static type checker, uses type annotations and inference to verify type correctness without running program
+[pytype](https://google.github.io/pytype/): another static type checker
 
 
-    # how-to notes
-    install homebrew
+### how-to notes
+
+    #install homebrew
     brew install git
     brew install macvim
     install iterm2
 
-    ### initial git config
+    #initial git config
     git config --global user.name Steve Rutledge
     git config --global user.email 44811980+SteveRutledge@users.noreply.github.com
 
@@ -36,90 +39,116 @@ more focused on framework/ecosystem right now rather than content:
     $ git clone git@github.com:SteveRutledge/python_project_scaffold.git
     cd python_project_scaffold
 
-    ### install pyenv
+    #install pyenv
     curl https://pyenv.run | bash
 
-    ### install pyenv dependencies
+    #install pyenv dependencies
     brew install readline xz
 
-    ### what version of python are available?
+    #what version of python are available?
     pyenv install --list
 
-    ### install
+    #install
     pyenv install 3.8.3
     pyenv install 3.7.7
 
-    ### make your fresh pythons available inside the project
+    #make your fresh pythons available inside the project
     pyenv local 3.8.3 3.7.7
 
-    ### install poetry for managing python packing and dependencies
+    #install poetry for managing python packing and dependencies
     curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
     add to ~/.zshrc
         source ~/.poetry/env
 
-    ### initialize project
+    #initialize project
     poetry init --no-interaction
     this will create a .toml file
         tom's obvious, minimal language
         used for a python project config file
 
-    ### create managed env for your project, install your package into it, create .lock file
+    #create managed env for your project, install your package into it, create .lock file
     poetry install
     poetry run python
     the lock file tracks exact versions installed in virtual environment for this project
 
-    ### add click package
+    #add click package
     poetry install click
 
-    ### update to latest  minor update
+    #update to latest  minor update
     poetry update click
     major release changes must be explicit
     poetry add click^7.0
 
-    ### run package
+    #run package
     poetry run get_wp
     poetry run get_wp --help
     poetry run get_wp -l de
 
-    ### add requests package
+    #add requests package
     poetry add requests
 
-    ### add pytest package, but only as a development dependency
+    #add pytest package, but only as a development dependency
     poetry add --dev pytest
 
-    ### run pytest unit tests
+    #run pytest unit tests
     poetry run pytest
 
-    ### run pytest with code coverage analysis
+    #run pytest with code coverage analysis
     poetry run pytest --cov
 
-    ### install nox
+    #install nox
     pip install --user --upgrade nox
 
     configure noxfile.py
 
-    ### add mock support to pytest
+    #add mock support to pytest
     poetry add --dev pytest-mock
 
-    ###  run nox
+    #run nox
     nox
 
-    ###  reuse virtual envs
+    #reuse virtual envs
     nox -r
 
-    ### configure nox linting with flake8 using .flake config file
-    ###  lint
+    #configure nox linting with flake8 using .flake config file
+    #lint
     nox -rs lint
 
-    # add blacken to nox
-    ### blacken
+    #add blacken to nox
+    #blacken
     nox -rs black
 
     poetry add insecure-package
     nox -rs safety
     poetry remove insecure-package
 
-    # add nox flake8-import-order
+    #add nox flake8-import-order
 
-    # add nox flake8-bugbear
+    #add nox flake8-bugbear
+
+    #use poetry to maange all dev tools to pin the versions
+    poetry add --dev \
+    black \
+    flake8 \
+    flake8-bandit \
+    flake8-black \
+    flake8-bugbear \
+    flake8-import-order \
+    safety
+
+    #install pre-commit
+    pip install --user --upgrade pre-commit
+
+    #after setting up the .pre-commit-config.yaml, install hooks
+    pre-commit install
+
+    #run pre-commit on all files
+    pre-commit run --all-files
+
+    #add mypy
+    poetry add --dev mypy
+
+    #add nox session to noxfile.py, then run:
+       nox -rs mypy
+ noxfile.py

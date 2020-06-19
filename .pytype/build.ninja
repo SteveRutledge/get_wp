@@ -1,0 +1,30 @@
+rule infer
+  command = /Users/sterutle/Documents/workspace/get_wp/.nox/pytype/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.7 -o $out --no-report-errors --nofail --quick $in
+  description = infer $module
+rule check
+  command = /Users/sterutle/Documents/workspace/get_wp/.nox/pytype/bin/python -m pytype.single --disable import-error --imports_info $imports --module-name $module -V 3.7 -o $out --analyze-annotated --nofail --quick $in
+  description = check $module
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/__init__.pyi: check /Users/sterutle/Documents/workspace/get_wp/src/get_wp/__init__.py
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/get_wp.__init__.imports
+  module = get_wp.__init__
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi: check /Users/sterutle/Documents/workspace/get_wp/src/get_wp/wikipedia.py
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/get_wp.wikipedia.imports
+  module = get_wp.wikipedia
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi: check /Users/sterutle/Documents/workspace/get_wp/src/get_wp/console.py | /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/__init__.pyi /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/get_wp.console.imports
+  module = get_wp.console
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi: check /Users/sterutle/Documents/workspace/get_wp/tests/test_console.py | /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/tests.test_console.imports
+  module = tests.test_console
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/noxfile.pyi: check /Users/sterutle/Documents/workspace/get_wp/noxfile.py
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/noxfile.imports
+  module = noxfile
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi: check /Users/sterutle/Documents/workspace/get_wp/tests/test_wikipedia.py | /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/tests.test_wikipedia.imports
+  module = tests.test_wikipedia
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/conftest.pyi: check /Users/sterutle/Documents/workspace/get_wp/tests/conftest.py
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/tests.conftest.imports
+  module = tests.conftest
+build /Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/__init__.pyi: check /Users/sterutle/Documents/workspace/get_wp/tests/__init__.py
+  imports = /Users/sterutle/Documents/workspace/get_wp/.pytype/imports/tests.__init__.imports
+  module = tests.__init__

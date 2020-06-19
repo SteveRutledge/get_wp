@@ -1,0 +1,15 @@
+# ninja log v5
+0	582	1592591489240485104	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/__init__.pyi	482287959f11b568
+582	1099	1592591489756217963	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/conftest.pyi	8a9c2b40d198f216
+1099	2870	1592591491512868657	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi	682f2345362ea4a8
+2870	3835	1592591492481257015	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
+3835	5661	1592591494298810394	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
+5662	6189	1592591494844174432	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi	cd7c311b500fa85c
+6189	7310	1592591495934286840	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/noxfile.pyi	7f45310d37936bf8
+7310	7823	1592591496482056539	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/__init__.pyi	4e665c878f419b57
+0	1800	1592593267865351179	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi	682f2345362ea4a8
+1800	2331	1592593268417248480	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi	cd7c311b500fa85c
+2331	3297	1592593269367569899	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
+3297	5122	1592593271190512107	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
+0	965	1592593361815452344	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
+965	2768	1592593363610769416	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
