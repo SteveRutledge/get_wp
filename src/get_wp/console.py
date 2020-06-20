@@ -5,13 +5,12 @@ import click
 from . import __version__, wikipedia
 
 
-
 @click.command()
 @click.option(
     "--language",
     "-l",
     default="en",
-    help="language edition of Wikipedia",
+    help="Language edition of Wikipedia",
     metavar="LANG",
     show_default=True,
 )

@@ -16,10 +16,10 @@ more focused on framework/ecosystem right now rather than content:
 [safety](https://github.com/pyupio/safety): check installed dependencies for know security vulnerabilities<br/>
 [pre-commit](https://pre-commit.com/): python framework for git pre-commit hooks<br/>
 [mypy](http://mypy-lang.org/): static type checker, uses type annotations and inference to verify type correctness without running program
-[pytype](https://google.github.io/pytype/): another static type checker
-[marshmallow](https://marshmallow.readthedocs.io/): define schemas to serialize, deserialize and validate data
-[desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them
-
+[pytype](https://google.github.io/pytype/): another static type checker<br/>
+[marshmallow](https://marshmallow.readthedocs.io/): define schemas to serialize, deserialize and validate data<br/>
+[desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them<br/>
+[typeguard](https://github.com/agronholm/typeguard): runtime type checker for python, when it is impractical or impossible to strictly type a static code path<br/>
 
 ### how-to notes
 
