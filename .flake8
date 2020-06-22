@@ -9,7 +9,8 @@ application-import-names = get_wp, tests
 # adopt google style guide
 import-order-style = google
 
-select = B,B9,BLK,C,E,F,I,S,W
+select = ANN,B,B9,BLK,C,E,F,I,S,W
+docstring-convention = google
 ignore = E203,E501,W503
 max-line-length = 80
 max-complexity = 10

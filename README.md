@@ -3,23 +3,24 @@ experimental fetch and manipulation of text from wikipedia
 
 more focused on framework/ecosystem right now rather than content:
 
-[git](https://git-scm.com/): source management<br/>
-[github](https://github.com): public remote source repository<br/>
-[pyenv](https://github.com/pyenv/pyenv): python version manager. lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.<br/>
-[poetry](https://python-poetry.org): manage Python packaging and dependencies. Its ease of  use and support for modern workflows make it the ideal successor to the  venerable setuptools. It is similar to npm and yarn in the JavaScript  world, and to other modern package and dependency managers. For alternatives to Poetry, have a look at flit, pipenv, pyflow, and dephell.<br/>
-[pytest](https://docs.pytest.org/en/latest/) unit test framework - somewhat of the de facto standard for python<br/>
-[nox](https://pypi.org/project/nox/): automates testing in multiple python environments<br/>
-[flake8](https://pypi.org/project/flake8/): lint aggregator<br/>
-[flake8-black](https://pypi.org/project/flake8-black/): flake8 plugin to run black code formatter from within the flake plugin ecosystem<br/>
-[flake8-bugbear](https://pypi.org/project/flake8-bugbear/): flake8 plugin that finds likely bugs and design flaws<br/>
-[flake8-import-order](https://pypi.org/project/flake8-import-order/): flake8 plugin that checks import ordering<br/>
-[safety](https://github.com/pyupio/safety): check installed dependencies for know security vulnerabilities<br/>
-[pre-commit](https://pre-commit.com/): python framework for git pre-commit hooks<br/>
+[git](https://git-scm.com/): source management.<br/>
+[github](https://github.com): public remote source repository.<br/>
+[pyenv](https://github.com/pyenv/pyenv): python version manager. lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well..<br/>
+[poetry](https://python-poetry.org): manage Python packaging and dependencies. Its ease of  use and support for modern workflows make it the ideal successor to the  venerable setuptools. It is similar to npm and yarn in the JavaScript  world, and to other modern package and dependency managers. For alternatives to Poetry, have a look at flit, pipenv, pyflow, and dephell..<br/>
+[pytest](https://docs.pytest.org/en/latest/) unit test framework - somewhat of the de facto standard for python.<br/>
+[nox](https://pypi.org/project/nox/): automates testing in multiple python environments.<br/>
+[flake8](https://pypi.org/project/flake8/): lint aggregator.<br/>
+[flake8-black](https://pypi.org/project/flake8-black/): flake8 plugin to run black code formatter from within the flake plugin ecosystem.<br/>
+[flake8-bugbear](https://pypi.org/project/flake8-bugbear/): flake8 plugin that finds likely bugs and design flaws.<br/>
+[flake8-import-order](https://pypi.org/project/flake8-import-order/): flake8 plugin that checks import ordering.<br/>
+[flake8-docstrings](https://gitlab.com/pycqa/flake8-docstrings): check that docstrings are compliant with pep 257 style recommendations..<br/>
+[safety](https://github.com/pyupio/safety): check installed dependencies for know security vulnerabilities.<br/>
+[pre-commit](https://pre-commit.com/): python framework for git pre-commit hooks.<br/>
 [mypy](http://mypy-lang.org/): static type checker, uses type annotations and inference to verify type correctness without running program
-[pytype](https://google.github.io/pytype/): another static type checker<br/>
-[marshmallow](https://marshmallow.readthedocs.io/): define schemas to serialize, deserialize and validate data<br/>
-[desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them<br/>
-[typeguard](https://github.com/agronholm/typeguard): runtime type checker for python, when it is impractical or impossible to strictly type a static code path<br/>
+[pytype](https://google.github.io/pytype/): another static type checker.<br/>
+[marshmallow](https://marshmallow.readthedocs.io/): define schemas to serialize, deserialize and validate data.<br/>
+[desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them.<br/>
+[typeguard](https://github.com/agronholm/typeguard): runtime type checker for python, when it is impractical or impossible to strictly type a static code path.<br/>
 
 ### how-to notes
 
@@ -153,4 +154,9 @@ more focused on framework/ecosystem right now rather than content:
 
     #add nox session to noxfile.py, then run:
        nox -rs mypy
- noxfile.py
+
+    #overview of dev tasks automated by nox, with docs
+    nox --list-sessions
+
+    # add flake8-docstrings plugin to you dev dependences
+    poetry add --dev flake8-docstrings
