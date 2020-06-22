@@ -1,40 +1,38 @@
 [tool.poetry]
-name = "hypermodern-python"
+name = "get_wp"
 version = "0.1.0"
-description = "The hypermodern Python project"
-authors = ["Claudio Jolowicz <mail@claudiojolowicz.com>"]
+description = "experimental fetch and manipulation of text from wikipedia"
 license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/cjolowicz/hypermodern-python"
-repository = "https://github.com/cjolowicz/hypermodern-python"
-keywords = ["hypermodern"]
+readme = "readme.md"
+homepage = "https://github.com/SteveRutledge/get_wp"
+repository = "https://github.com/SteveRutledge/get_wp"
+keywords = ["wikipedia"]
+authors = ["Steve <44811980+SteveRutledge@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-click = "^7.0"
-requests = "^2.22.0"
-marshmallow = "^3.3.0"
+click = "^7.1.2"
+requests = "^2.23.0"
 desert = "^2020.1.6"
+marshmallow = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.3.2"
-coverage = {extras = ["toml"], version = "^5.0.1"}
-pytest-cov = "^2.8.1"
-pytest-mock = "^2.0.0"
-flake8 = "^3.7.9"
+pytest = "^5.4.3"
+coverage = {extras = ["toml"], version = "^5.1"}
+pytest-cov = "^2.9.0"
+pytest-mock = "^3.1.1"
 black = "^19.10b0"
-flake8-black = "^0.1.1"
-flake8-import-order = "^0.18.1"
-flake8-bugbear = "^20.1.2"
+flake8 = "^3.8.3"
 flake8-bandit = "^2.1.2"
-safety = "^1.8.5"
-mypy = "^0.761"
-pytype = {version = "^2020.1.8", python = "3.7"}
-flake8-annotations = "^2.0.0"
-typeguard = "^2.7.1"
+flake8-black = "^0.2.0"
+flake8-bugbear = "^20.1.4"
+flake8-import-order = "^0.18.1"
+safety = "^1.9.0"
+mypy = "^0.781"
+pytype = {version = "^2020.6.1", python = "3.7"}
 
 [tool.poetry.scripts]
-hypermodern-python = "get_wp.console:main"
+get_wp= "get_wp.console:main"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -46,7 +44,6 @@ source = ["get_wp"]
 [tool.coverage.report]
 show_missing = true
 fail_under = 100
-
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
