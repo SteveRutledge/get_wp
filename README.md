@@ -4,18 +4,17 @@ experimental fetch and manipulation of text from wikipedia
 more focused on framework/ecosystem right now rather than content:
 
 summary:
-    * manage your source in a distributed fashion
-    * across multiple versions of python
-    * with frameowrk for project packaging and package dependencies
-    * and a standard unit test framework
-    * automate testing, ci and cd across multiple environments
-    * lint check for code style, likely bugs, design flaws, import order
-    * document code in-place, check for docstring standards conformance
-    * easily check depdendencies for known security vulnerabilities
-    * decorate code with type annotations, use for static and runtime type checking
-    * auto-format code on pre-commit
-    * test that docstrings match code, test that docstring examples match example output
-
+    * manage your source in a distributed fashion<br/>
+    * across multiple versions of python<br/>
+    * with frameowrk for project packaging and package dependencies<br/>
+    * and a standard unit test framework<br/>
+    * automate testing, ci and cd across multiple environments<br/>
+    * lint check for code style, likely bugs, design flaws, import order<br/>
+    * document code in-place, check for docstring standards conformance<br/>
+    * easily check depdendencies for known security vulnerabilities<br/>
+    * decorate code with type annotations, use for static and runtime type checking<br/>
+    * auto-format code on pre-commit<br/>
+    * test that docstrings match code, test that docstring examples match example output<br/>
 
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
