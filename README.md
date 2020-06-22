@@ -3,6 +3,20 @@ experimental fetch and manipulation of text from wikipedia
 
 more focused on framework/ecosystem right now rather than content:
 
+summary:
+    * manage your source in a distributed fashion
+    * across multiple versions of python
+    * with frameowrk for project packaging and package dependencies
+    * and a standard unit test framework
+    * automate testing, ci and cd across multiple environments
+    * lint check for code style, likely bugs, design flaws, import order
+    * document code in-place, check for docstring standards conformance
+    * easily check depdendencies for known security vulnerabilities
+    * decorate code with type annotations, use for static and runtime type checking
+    * auto-format code on pre-commit
+    * test that docstrings match code, test that docstring examples match example output
+
+
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
 [pyenv](https://github.com/pyenv/pyenv): python version manager. lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well..<br/>
@@ -21,6 +35,7 @@ more focused on framework/ecosystem right now rather than content:
 [marshmallow](https://marshmallow.readthedocs.io/): define schemas to serialize, deserialize and validate data.<br/>
 [desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them.<br/>
 [typeguard](https://github.com/agronholm/typeguard): runtime type checker for python, when it is impractical or impossible to strictly type a static code path.<br/>
+[darglint](https://github.com/terrencepreilly/darglint): check that docstrings match function definitions.<br/>
 
 ### how-to notes
 
