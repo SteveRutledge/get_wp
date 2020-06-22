@@ -3,15 +3,16 @@ experimental fetch and manipulation of text from wikipedia
 
 more focused on framework/ecosystem right now rather than content:
 
-summary:
+summary:<br/>
     * manage your source in a distributed fashion<br/>
     * across multiple versions of python<br/>
-    * with frameowrk for project packaging and package dependencies<br/>
+    * with framework for project packaging and package dependencies<br/>
     * and a standard unit test framework<br/>
     * automate testing, ci and cd across multiple environments<br/>
     * lint check for code style, likely bugs, design flaws, import order<br/>
     * document code in-place, check for docstring standards conformance<br/>
-    * easily check depdendencies for known security vulnerabilities<br/>
+    * generate html docs <br/>
+    * easily check dependencies for known security vulnerabilities<br/>
     * decorate code with type annotations, use for static and runtime type checking<br/>
     * auto-format code on pre-commit<br/>
     * test that docstrings match code, test that docstring examples match example output<br/>
@@ -35,6 +36,10 @@ summary:
 [desert](https://desert.readthedocs.io/): use type annotations of dataclasses to generate serialization schemas for them.<br/>
 [typeguard](https://github.com/agronholm/typeguard): runtime type checker for python, when it is impractical or impossible to strictly type a static code path.<br/>
 [darglint](https://github.com/terrencepreilly/darglint): check that docstrings match function definitions.<br/>
+[sphinx](http://www.sphinx-doc.org/): generate documentation.<br/>
+[autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html): enables Sphinx to generate API documentation from the docstrings in your package.<br/>
+[napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html): pre-processes Google-style docstrings to reStructuredText.<br/>
+[sphinx-autodoc-typehints](https://github.com/agronholm/sphinx-autodoc-typehints): uses type annotations to document the types of function parameters and return values.<br/>
 
 ### how-to notes
 
@@ -174,3 +179,10 @@ summary:
 
     # add flake8-docstrings plugin to you dev dependences
     poetry add --dev flake8-docstrings
+
+    # add dxdoctest to  dev env
+    poetry add --dev xdoctest
+
+    # generate html docs with sphinx
+    nox -rs docs
+    
