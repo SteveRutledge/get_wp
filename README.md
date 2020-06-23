@@ -1,4 +1,7 @@
 # get_wp
+
+[![Tests](https://github.com/<your-username>/hypermodern-python/workflows/Tests/badge.svg)](https://github.com/<your-username>/hypermodern-python/actions?workflow=Tests)
+
 experimental fetch and manipulation of text from wikipedia
 
 more focused on framework/ecosystem right now rather than content:
