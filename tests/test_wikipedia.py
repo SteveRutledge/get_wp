@@ -1,3 +1,4 @@
+"""Test cases for the wikipedia modue."""
 from unittest.mock import Mock
 
 import click

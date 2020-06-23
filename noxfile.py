@@ -87,7 +87,7 @@ def pytype(session: Session) -> None:
 
 @nox.session(python=["3.8", "3.7"])
 def tests(session: Session) -> None:
-    "Run the test suite." ""
+    """Run the test suite."""
     args = session.posargs or ["--cov", "-m", "not e2e"]
     session.run("poetry", "install", "--no-dev", external=True)
     install_with_constraints(
@@ -120,4 +120,3 @@ def docs(session: Session) -> None:
     session.run("poetry", "install", "--no-dev", external=True)
     install_with_constraints(session, "sphinx", "sphinx-autodoc-typehints")
     session.run("sphinx-build", "docs", "docs/_build")
-

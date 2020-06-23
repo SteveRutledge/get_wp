@@ -17,3 +17,11 @@
 1813	2335	1592594253716084474	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi	cd7c311b500fa85c
 1	971	1592594283805720271	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
 971	2786	1592594285615226213	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
+1	519	1592935713764765378	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/conf.pyi	1ee3979bc55c8586
+520	1029	1592935714275108505	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/__init__.pyi	482287959f11b568
+1029	2939	1592935716157276424	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/wikipedia.pyi	682f2345362ea4a8
+2939	3907	1592935717137110381	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/get_wp/console.pyi	ba5429c109ac79da
+3907	5205	1592935718358731712	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/noxfile.pyi	7f45310d37936bf8
+5205	7182	1592935720390762616	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c
+7182	8138	1592935721374600485	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_wikipedia.pyi	cd7c311b500fa85c
+0	1822	1592935888784270858	/Users/sterutle/Documents/workspace/get_wp/.pytype/pyi/tests/test_console.pyi	261018d1a40fd91c

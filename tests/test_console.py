@@ -1,3 +1,4 @@
+"""Test cases for the console module."""
 from unittest.mock import Mock
 
 from click.testing import CliRunner
@@ -17,7 +18,7 @@ def runner() -> CliRunner:
 @pytest.fixture
 def mock_wikipedia_random_page(mocker: MockFixture) -> Mock:
     """Fixture for mocking wikipedia.random_page."""
-    return mocker.patch("hypermodern_python.wikipedia.random_page")
+    return mocker.patch("get_wp.wikipedia.random_page")
 
 
 def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
