@@ -51,7 +51,6 @@ def random_page(language: str = "en") -> Page:
         >>> bool(page.title)
         True
     """
-
     url = API_URL.format(language=language)
 
     try:
