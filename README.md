@@ -1,10 +1,10 @@
 # get_wp
 
-[![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions?query=workflow%3A.github%2Fworkflows%2Ftest.yml)
+[![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions)
 
 experimental fetch and manipulation of text from wikipedia
 
-more focused on framework/ecosystem right now rather than content:
+more focused on SDLC framework/ecosystem right now rather than content:
 
 summary:<br/>
     * manage your source in a distributed fashion<br/>
