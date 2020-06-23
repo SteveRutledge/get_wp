@@ -1,6 +1,6 @@
 # get_wp
 
-[![Tests](https://github.com/<your-username>/hypermodern-python/workflows/Tests/badge.svg)](https://github.com/<your-username>/hypermodern-python/actions?workflow=Tests)
+[![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions?workflow=Tests)
 
 experimental fetch and manipulation of text from wikipedia
 
