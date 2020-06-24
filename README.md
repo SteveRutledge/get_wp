@@ -2,6 +2,8 @@
 
 [![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions)
 
+[![Codecov](https://codecov.io/gh/SteveRutledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
+
 experimental fetch and manipulation of text from wikipedia
 
 more focused on SDLC framework/ecosystem right now rather than content:
@@ -11,6 +13,7 @@ summary:<br/>
     * across multiple versions of python<br/>
     * with framework for project packaging and package dependencies<br/>
     * and a standard unit test framework<br/>
+    * and code coverage analysis<br/>
     * automate testing, ci and cd across multiple environments<br/>
     * lint check for code style, likely bugs, design flaws, import order<br/>
     * document code in-place, check for docstring standards conformance<br/>
@@ -43,6 +46,7 @@ summary:<br/>
 [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html): enables Sphinx to generate API documentation from the docstrings in your package.<br/>
 [napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html): pre-processes Google-style docstrings to reStructuredText.<br/>
 [sphinx-autodoc-typehints](https://github.com/agronholm/sphinx-autodoc-typehints): uses type annotations to document the types of function parameters and return values.<br/>
+[codecov](https://codecov.io/): code coverage reporting service.<br/>
 
 ### how-to notes
 
