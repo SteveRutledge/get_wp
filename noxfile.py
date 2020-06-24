@@ -121,6 +121,7 @@ def docs(session: Session) -> None:
     install_with_constraints(session, "sphinx", "sphinx-autodoc-typehints")
     session.run("sphinx-build", "docs", "docs/_build")
 
+
 @nox.session(python="3.8")
 def coverage(session: Session) -> None:
     """Upload coverage data."""
