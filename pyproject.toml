@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "get_wp"
-version = "0.1.0"
+version = "0.2.0"
 description = "experimental fetch and manipulation of text from wikipedia"
 license = "MIT"
 readme = "README.md"
@@ -15,6 +15,7 @@ click = "^7.1.2"
 requests = "^2.23.0"
 desert = "^2020.1.6"
 marshmallow = "^3.6.1"
+importlib_metadata = {version = "^1.7.0", python = "<3.8"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.3"

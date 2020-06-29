@@ -1,7 +1,7 @@
 # get_wp
 
 [![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions)
-[![Codecov](https://codecov.io/gh/SteveRutledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
+[![Codecov](https://codecov.io/gh/SteveRUtledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
 [![Read the Docs](https://readthedocs.org/projects/get_wp/badge/)](https://get_wp.readthedocs.io/)
 Experimental fetch and manipulation of text from wikipedia.
 
@@ -22,8 +22,9 @@ summary:<br/>
     * auto-format code on pre-commit<br/>
     * test that docstrings match code and docstring examples match example output<br/>
     * track status of ci tests and doc tests with dashboard badges<br/>
+    * automatically create release notes<br/>
     * publish to a package repository for easy deployments/updates<br/>
-    * publish docs to a document repository<br/>
+    * publish versioned docs to a document repository, auto-rebuilt on project update<br/>
 
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
@@ -48,7 +49,9 @@ summary:<br/>
 [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html): enables Sphinx to generate API documentation from the docstrings in your package.<br/>
 [napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html): pre-processes Google-style docstrings to reStructuredText.<br/>
 [sphinx-autodoc-typehints](https://github.com/agronholm/sphinx-autodoc-typehints): uses type annotations to document the types of function parameters and return values.<br/>
+[releaseDrafter](https://github.com/release-drafter/release-drafter): drafts your next release notes as pull requests are merged into master.<br/>
 [codecov](https://codecov.io/): code coverage reporting service.<br/>
+[readthedocs](https://readthedocs.org/): hosting service for documentation, rebuilds on project update, versioned docs.<br/>
 
 ### how-to notes
 
