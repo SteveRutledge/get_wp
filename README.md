@@ -1,9 +1,8 @@
 # get_wp
 
 [![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions)
-
 [![Codecov](https://codecov.io/gh/SteveRutledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
-
+[![Read the Docs](https://readthedocs.org/projects/get_wp/badge/)](https://get_wp.readthedocs.io/)
 Experimental fetch and manipulation of text from wikipedia.
 
 I am more focused on SDLC framework/ecosystem right now rather than content:
