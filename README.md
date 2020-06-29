@@ -4,24 +4,27 @@
 
 [![Codecov](https://codecov.io/gh/SteveRutledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
 
-experimental fetch and manipulation of text from wikipedia
+Experimental fetch and manipulation of text from wikipedia.
 
-more focused on SDLC framework/ecosystem right now rather than content:
+I am more focused on SDLC framework/ecosystem right now rather than content:
 
 summary:<br/>
     * manage your source in a distributed fashion<br/>
     * across multiple versions of python<br/>
-    * with framework for project packaging and package dependencies<br/>
-    * and a standard unit test framework<br/>
+    * with a framework for project packaging and package dependencies<br/>
+    * and a framework for unit tests<br/>
     * and code coverage analysis<br/>
-    * automate testing, ci and cd across multiple environments<br/>
+    * automated testing, ci and cd across multiple environments<br/>
     * lint check for code style, likely bugs, design flaws, import order<br/>
-    * document code in-place, check for docstring standards conformance<br/>
-    * generate html docs <br/>
-    * easily check dependencies for known security vulnerabilities<br/>
-    * decorate code with type annotations, use for static and runtime type checking<br/>
+    * document code in-place, while checking for docstring standards conformance<br/>
+    * generate html docs from docstrings<br/>
+    * check dependencies for known security vulnerabilities<br/>
+    * decorate code with type annotations, then use for static and runtime type checking<br/>
     * auto-format code on pre-commit<br/>
-    * test that docstrings match code, test that docstring examples match example output<br/>
+    * test that docstrings match code and docstring examples match example output<br/>
+    * track status of ci tests and doc tests with dashboard badges<br/>
+    * publish to a package repository for easy deployments/updates<br/>
+    * publish docs to a document repository<br/>
 
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
