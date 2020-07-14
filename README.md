@@ -2,7 +2,8 @@
 
 [![Tests](https://github.com/SteveRutledge/get_wp/workflows/Tests/badge.svg)](https://github.com/SteveRutledge/get_wp/actions)
 [![Codecov](https://codecov.io/gh/SteveRUtledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
-[![Read the Docs](https://readthedocs.org/projects/get_wp/badge/)](https://get_wp.readthedocs.io/)
+[![Read the Docs](https://readthedocs.org/projects/get_wp/badge/)](https://get_wp.readthedocs.io/)<br/>
+
 Experimental fetch and manipulation of text from wikipedia.
 
 I am more focused on SDLC framework/ecosystem right now rather than content:
@@ -58,7 +59,9 @@ summary:<br/>
     #install homebrew
     brew install git
     brew install macvim
-    install iterm2
+    brew install zsh
+
+    install [iterm2](https://iterm2.com)
 
     #initial git config
     git config --global user.name Steve Rutledge
@@ -161,7 +164,7 @@ summary:<br/>
 
     #add nox flake8-bugbear
 
-    #use poetry to maange all dev tools to pin the versions
+    #use poetry to manage all dev tools to pin the versions
     poetry add --dev \
     black \
     flake8 \
@@ -192,9 +195,21 @@ summary:<br/>
     # add flake8-docstrings plugin to you dev dependences
     poetry add --dev flake8-docstrings
 
-    # add dxdoctest to  dev env
+    # add xdoctest to dev env
     poetry add --dev xdoctest
 
     # generate html docs with sphinx
     nox -rs docs
+
+    #git zsh aliases
+    gst
+    git add
+    gc
+
+    # push to github (triggers ci/cd automations)
+    git push
+
+    #build and publish
+    poetry build
+    poetry publish to PyPI
     
