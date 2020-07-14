@@ -9,23 +9,22 @@ Experimental fetch and manipulation of text from wikipedia.
 I am more focused on SDLC framework/ecosystem right now rather than content:
 
 summary:<br/>
-    * manage your source in a distributed fashion<br/>
-    * across multiple versions of python<br/>
-    * with a framework for project packaging and package dependencies<br/>
-    * and a framework for unit tests<br/>
-    * and code coverage analysis<br/>
-    * automated testing, ci and cd across multiple environments<br/>
-    * lint check for code style, likely bugs, design flaws, import order<br/>
-    * document code in-place, while checking for docstring standards conformance<br/>
-    * generate html docs from docstrings<br/>
-    * check dependencies for known security vulnerabilities<br/>
-    * decorate code with type annotations, then use for static and runtime type checking<br/>
-    * auto-format code on pre-commit<br/>
-    * test that docstrings match code and docstring examples match example output<br/>
-    * track status of ci tests and doc tests with dashboard badges<br/>
-    * automatically create release notes<br/>
-    * publish to a package repository for easy deployments/updates<br/>
-    * publish versioned docs to a document repository, auto-rebuilt on project update<br/>
+* streamlined management of all your source, docs and related artifacts in a distributed fashion to track changes, revision history, rollback breaking changes, collaborate with team, isolate changes from main codebase, troubleshoot changes, and much more...<br/>
+* all aspects of which are managed across multiple versions of software<br/>
+* within a framework for project packaging and package dependencies<br/>
+* and a framework for unit testing, automated across all versions<br/>
+* and automated code coverage analysis<br/>
+* automated testing, continuous integration and continuous delivery across multiple environments<br/>
+* automated lint checks for code style, likely bugs, design flaws, import order<br/>
+* documentation of code in-place, automated generation of docs, automated checking for doc standards conformance<br/>
+* automated check of dependencies for known security vulnerabilities<br/>
+* automated decoration of untyped code with type annotations, then used for static and runtime type checking<br/>
+* auto-formatting of code on pre-commit<br/>
+* automatic test that in-line docs match code and docstring examples match documented example output<br/>
+* status tracking of continuous integration tests and doc tests with dashboard badges<br/>
+* automatically create release notes<br/>
+* automatically publish to a package repository for easy deployments/updates<br/>
+* automatically publish versioned docs to a document repository, auto-rebuilt on project update<br/>
 
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
