@@ -4,7 +4,7 @@
 [![Codecov](https://codecov.io/gh/SteveRUtledge/get_wp/branch/master/graph/badge.svg)](https://codecov.io/gh/SteveRutledge/get_wp)
 [![Read the Docs](https://readthedocs.org/projects/get_wp/badge/)](https://get_wp.readthedocs.io/)<br/>
 
-Experimental fetch and manipulation of text from wikipedia.
+Experimental fetch and manipulation of text from Wikipedia.
 
 I am more focused on SDLC framework/ecosystem right now rather than content:
 
@@ -29,7 +29,8 @@ summary:<br/>
 [git](https://git-scm.com/): source management.<br/>
 [github](https://github.com): public remote source repository.<br/>
 [pyenv](https://github.com/pyenv/pyenv): python version manager. lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well..<br/>
-[poetry](https://python-poetry.org): manage Python packaging and dependencies. Its ease of  use and support for modern workflows make it the ideal successor to the  venerable setuptools. It is similar to npm and yarn in the JavaScript  world, and to other modern package and dependency managers. For alternatives to Poetry, have a look at flit, pipenv, pyflow, and dephell..<br/>
+[poetry](https://python-poetry.org): 
+(why is site down?) manage Python packaging and dependencies. Its ease of  use and support for modern workflows make it the ideal successor to the  venerable setuptools. It is similar to npm and yarn in the JavaScript  world, and to other modern package and dependency managers. For alternatives to Poetry, have a look at flit, pipenv, pyflow, and dephell..<br/>
 [pytest](https://docs.pytest.org/en/latest/) unit test framework - somewhat of the de facto standard for python.<br/>
 [nox](https://pypi.org/project/nox/): automates testing in multiple python environments.<br/>
 [flake8](https://pypi.org/project/flake8/): lint aggregator.<br/>
